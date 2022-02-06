@@ -3,7 +3,7 @@
 */
 const PORT = process.env.PORT || 5000
 require('dotenv').config()
-// TODO: async errors
+require('express-async-errors')
 const express = require('express')
 const notFound = require('./middleware/not-found')
 const errorHandler = require('./middleware/error-handler')
