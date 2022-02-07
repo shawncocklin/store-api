@@ -25,7 +25,7 @@ app.use(express.json())
   ROUTES
 */
 app.get('/', (req,res)=> {
-  res.send(`<h1>Store API</h1><a href="/api/v1/products">Producst Route</a>`)
+  res.send(`<h1>Store API</h1><a href="/api/v1/products">Products Route</a>`)
 })
 
 app.use('/api/v1/products', productRouter)
